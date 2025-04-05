@@ -1,5 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -15,25 +18,9 @@ function App() {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <a href="#" className="logo">
-            Jelena.codes
-          </a>
-          <ul className="nav-links">
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      <Navbar />
+      <Hero />
+      <About />
       <header className="hero">
         <h1>Jelena Avramovic</h1>
         <p>Web Designer & Developer</p>

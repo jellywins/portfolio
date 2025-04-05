@@ -11,6 +11,7 @@ body {
   background-color: #fdfdfd;
   color: #333;
   padding-bottom: 4rem; /* optional footer breathing room */
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .hero {
@@ -109,7 +110,7 @@ ul {
 }
 
 ul li {
-  background: #cce3f6;
+  /* background: #cce3f6; */
   padding: 0.5rem 1rem;
   border-radius: 6px;
   font-weight: 500;
