@@ -1,15 +1,25 @@
-// src/components/Navbar.jsx
-import React from "react";
-import logo from "../assets/portfolio_logo.png";
+import React, { useState } from "react";
 import "./Navbar.scss";
+import logo from "../assets/portfolio_logo.png";
 
-function Navbar() {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src={logo} alt="Jelena Avramovic Logo" />
+        <a href="#hero">
+          <img src={logo} alt="Logo" />
+        </a>
       </div>
-      <ul className="navbar__links">
+
+      <div className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <span />
+        <span />
+        <span />
+      </div>
+
+      <ul className={`navbar__links ${menuOpen ? "active" : ""}`}>
         <li>
           <a href="#about">About</a>
         </li>
@@ -19,15 +29,12 @@ function Navbar() {
         <li>
           <a href="#projects">Projects</a>
         </li>
-        {/* <li>
-          <a href="#blog">Blog</a>
-        </li> */}
         <li>
           <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
