@@ -5,7 +5,7 @@
     &__container {
         display: flex;
         align-items: center; // better vertical alignment
-        justify-content: center;
+        justify-content: space-between;
         gap: 3rem;
         max-width: 900px; // slightly narrower overall
         margin: 0 auto;
@@ -21,8 +21,8 @@
     }
 
     &__image {
-        width: 180px; // made image larger
-        height: 180px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         object-fit: cover;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -38,13 +38,12 @@
 
     &__text {
         flex: 1;
-        max-width: 500px; // slightly narrower text
+        max-width: 600px; // slightly narrower text
     }
 
     &__text h2 {
         font-size: 1.8rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid #3b82f6;
         display: inline-block;
         padding-bottom: 0.3rem;
     }

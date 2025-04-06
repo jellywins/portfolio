@@ -1,11 +1,11 @@
 .hero {
     background-color: #fffafc;
-    padding: 4rem 2rem;
+    padding: 2rem;
 
     &__container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 3rem;
         max-width: 1100px;
@@ -17,7 +17,7 @@
     }
 
     &__image {
-        width: 200px;
+        width: 500px;
         max-width: 100%;
         height: auto;
     }

@@ -1,0 +1,116 @@
+.experience {
+    background-color: #fef7fb; // 🌸 soft pinky-lilac background
+    padding: 4rem 2rem;
+    text-align: left;
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #222;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__tab {
+        background-color: #e5fafd;
+        border: none;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border-radius: 6px; // subtle square
+        color: #222;
+
+        &.active {
+            background-color: #a4dce6;
+            font-weight: 600;
+        }
+
+        &:hover {
+            background-color: #d4f3f9;
+        }
+    }
+
+    &__description {
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+        color: #444;
+        max-width: 700px;
+    }
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    &__badge {
+        background-color: #f1f1f1;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #333;
+        border-radius: 6px;
+    }
+}
+
+.experience-section {
+    background-color: #fff6f9; // your soft pink
+    width: 100vw;
+    margin-left: calc(-1 * (100vw - 100%) / 2); // fix scrollbars
+    padding: 4rem 0;
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.experience__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.experience__tab {
+    padding: 0.75rem 1.5rem;
+    background: #e7faff;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.active {
+        background: #afe7f2;
+    }
+}
+
+.experience__description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.experience__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience__badge {
+    background: #f1f1f1;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}

@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import ExperienceAndSkills from "./components/ExperienceAndSkills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -21,49 +25,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <header className="hero">
-        <h1>Jelena Avramovic</h1>
-        <p>Web Designer & Developer</p>
-        <a href="#projects" className="cta-button">
-          View My Work
-        </a>
-      </header>
-
-      <main className="main">
-        <section id="projects">
-          <h2>Projects</h2>
-          <div className="project-list">
-            <div className="project-card">
-              <h3>Project Title</h3>
-              <p>Short description of what the project does.</p>
-              <a href="#">Live Demo</a>
-              <a href="#">GitHub</a>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills">
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Figma</li>
-            <li>Node.js</li>
-            <li>MySQL</li>
-          </ul>
-        </section>
-
-        <section id="contact">
-          <h2>Contact</h2>
-          <p>Email: jelenacodes@gmail.com</p>
-          <p>
-            <a href="https://github.com/jellywins">GitHub</a> |{" "}
-            <a href="https://linkedin.com/in/jelenavramovic">LinkedIn</a>
-          </p>
-        </section>
-      </main>
+      <ExperienceAndSkills />
+      <Projects />
+      <Contact />
+      <Footer />
       {showButton && (
         <button
           className="scroll-to-top"
